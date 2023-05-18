@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Milimeter Converter</title>
+
+<style> 
+	body {
+		overflow-x: hidden;
+		background-color: lightpink;
+	}
+
+
+
+	#div1 {
+		width: 690px;
+
+		height:250px;
+	}
+
+#getNumber {
+	outline: none;
+	pointer-events: none;
+}
+
+h1 {
+	font-size: 67px;
+}
+</style>
+	
+</head>
+<body>
+
+<center>
+
+	<h1>CONVERTER CALCULATOR</h1>
+
+	<img src="https://static.thenounproject.com/png/1940181-200.png" width="234">
+
+	<h3>“Success depends upon previous preparation, and without such preparation there is sure to be failure.”</h3>
+</center>
+
+	<br><br><br><br>
+	<div class="container-md bg-danger" id="div1">
+		<br>
+	
+		<center><h2>Milimeter Converter</h1></center>
+	<br>
+		 
+	<center>
+
+		<h5><input type="number" id="num1" placeholder="Desired value"> =
+		<input type="text" id="getNumber" placeholder="Converted value" readonly = "true" > </h5><br><br>
+	<input class="btn bg-warning text-dark" type="button" value="Convert to Centimeters" onclick="myLastProjects()">&nbsp; 
+	<input class="btn bg-warning text-dark " type="button" value="Convert to Meters" onclick="myLastProjectss() ">&nbsp; 
+	<input class="btn bg-warning text-dark" type="button" value="Convert to Kilometers" onclick="myLastProjectsss()"></center>
+	
+		
+
+	
+	</div>
+
+	<script>
+			function myLastProjects(){
+			var x = document.getElementById('num1').value;
+			var y = 10;
+			var answer = Number(x) / Number(y); 
+			document.getElementById('getNumber').value = answer;
+	}
+
+			
+			function myLastProjectss() {
+			var x = document.getElementById('num1').value;
+			var y = 1000;
+			var answer = Number(x) / Number(y); 
+			document.getElementById('getNumber').value =  answer;
+		}
+
+		function myLastProjectsss() {
+			var x = document.getElementById('num1').value;
+			var y = 1000000;
+			var answer = Number(x) / Number(y); 
+			document.getElementById('getNumber').value =  answer;
+		}
+
+		
+
+	</script>
+</body>
+</html>
